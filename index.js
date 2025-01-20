@@ -30,3 +30,15 @@ var admin = document.querySelector("#exampleInputAdmin");
 nome.value = "Leonardo";
 nome.style.color = "blue";
 
+/**
+ * Objetivo: Capturar os campos do formulário
+ */
+var fields = document.querySelectorAll("#form-user-create [name]");
+
+fields.forEach(function (field, index) {
+
+    // O console permite separar valores de mostragem na mesma linha
+    console.log(field.id, field.name, field.value)
+
+});
+
